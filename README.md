@@ -2,9 +2,8 @@
 
 Welcome to my personal portfolio repository! This responsive web application showcases my projects, skills, and professional journey as a MERN Stack Developer.
 
-![Project Preview](<img width="1890" height="742" alt="image" src="https://github.com/user-attachments/assets/4e019b79-adbc-4849-bdb5-c6570d87fed3" />
-)
-*(Note: You can replace the image path above with a screenshot of your actual portfolio home page)*
+<img width="1881" height="880" alt="image" src="https://github.com/user-attachments/assets/4ef781f0-47b6-4bc5-af93-88765273af15" />
+
 
 ## 🚀 Live Demo
 
