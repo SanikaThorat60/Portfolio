@@ -1,4 +1,4 @@
-# Sanika Thorat - MERN Stack Developer Portfolio
+# Sanika Thorat - MERN Stack Developer 
 
 Welcome to my personal portfolio repository! This responsive web application showcases my projects, skills, and professional journey as a MERN Stack Developer.
 
