@@ -6,8 +6,7 @@ Welcome to my personal portfolio repository! This responsive web application sho
 
 
 ## 🚀 Live Demo
-
-[Link to Live Site]((https://sanikasportfolio-wheat.vercel.app/))
+[Link to Live Site]([https://sanikasportfolio-wheat.vercel.app/])
 
 ## 🛠️ Tech Stack
 
