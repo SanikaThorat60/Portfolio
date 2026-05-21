@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-color: #fafafa;
+    --surface-color: #ffffff;
+    --text-primary: #171717;
+    --text-secondary: #525252;
+    --accent-color: #eab308; /* Yellow 500 */
+    --accent-glow: rgba(234, 179, 8, 0.15);
+  }
+
+  .dark {
+    --bg-color: #000000;
+    --surface-color: #111111;
+    --text-primary: #f5f5f5;
+    --text-secondary: #a3a3a3;
+    --accent-color: #facc15; /* Yellow 400 */
+    --accent-glow: rgba(250, 204, 21, 0.15);
+  }
+
+  * {
+    @apply box-border m-0 p-0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[var(--bg-color)] text-[var(--text-primary)] font-sans antialiased transition-colors duration-300;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)];
+  }
+  
+  .dark .glass {
+    @apply bg-black/20 border-white/5;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-6 md:px-12;
+  }
+
+  .section-padding {
+    @apply py-24 md:py-32;
+  }
+
+  .heading-1 {
+    @apply font-heading text-5xl md:text-7xl font-bold tracking-tight;
+  }
+
+  .heading-2 {
+    @apply font-heading text-3xl md:text-5xl font-bold tracking-tight mb-12 text-center;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full bg-[var(--accent-color)] text-white font-medium transition-all hover:scale-105 hover:shadow-[0_0_20px_var(--accent-glow)] active:scale-95;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full border border-[var(--accent-color)] text-[var(--accent-color)] font-medium transition-all hover:bg-[var(--accent-color)] hover:text-white active:scale-95;
+  }
+}
+
+/* Custom background animations or specific utilities */
+.blob {
+  position: absolute;
+  filter: blur(80px);
+  z-index: -1;
+  opacity: 0.5;
+  animation: float 10s infinite ease-in-out alternate;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(20px, -20px) scale(1.1);
+  }
+}

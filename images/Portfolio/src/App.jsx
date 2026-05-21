@@ -1,0 +1,33 @@
+import { ThemeProvider } from './context/ThemeContext';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Certifications from './components/Certifications';
+import Services from './components/Services';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import './index.css';
+
+function App() {
+  return (
+    <ThemeProvider>
+      <div className="min-h-screen bg-[var(--bg-color)] text-[var(--text-primary)] font-sans transition-colors duration-300">
+        <Navbar />
+        <main>
+          <Hero />
+          <About />
+          <Services />
+          <Skills />
+          <Projects />
+          <Certifications />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </ThemeProvider>
+  );
+}
+
+export default App;
