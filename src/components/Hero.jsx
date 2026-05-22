@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '../assets/Sanika_Thorat.pdf';
+import resume from '../assets/Sanika_Thorat_Resume (5).pdf';
 
 const Hero = () => {
     return (
